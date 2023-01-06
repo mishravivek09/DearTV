@@ -5,7 +5,7 @@
 ### Tech Stack - JAVA, Spring-Boot, PostGreSQL, Hibernate, HTML, CSS, JavaScript.
 
 A simple movie website like Netflix / Amazon Prime where user have to first register himself than He / She will able to navigate to home page.
-User can search any movies, if movie availabe on server than user can get respective search result else user get will proper error response / message.
+User can search any movies, if movie availabe on server than user can get respective search result else user will get proper error response / message.
 
 
 The following link will not work if server execution time is more than 500 hours accourding to the railway.app
