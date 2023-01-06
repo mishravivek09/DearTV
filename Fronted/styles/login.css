@@ -1,0 +1,65 @@
+#login-form-div {
+  margin: auto;
+  width: 30%;
+  background-color: #272727;
+  margin-top: 30px;
+  padding: 20px;
+  text-align: center;
+  height: 70vh;
+  border-radius: 25px;
+  color: whitesmoke;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+form {
+  width: 80%;
+  display: grid;
+  margin: auto;
+  margin-top: 30px;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: auto;
+  row-gap: 30px;
+}
+input {
+  background-color: black;
+  border: 1px solid white;
+  outline: none;
+  padding: 5px;
+  color: white;
+}
+button {
+  width: 30%;
+  height: 40px;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 40px;
+  border: 1px solid white;
+  border-radius: 15px;
+  background-color: black;
+  color: white;
+  font-weight: bolder;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #272727;
+  border: 1px solid black;
+}
+a {
+  color: white;
+}
+@media all and (min-width: 230px) and (max-width: 500px) {
+  #login-form-div {
+    width: 85%;
+    height: 550px;
+  }
+}

@@ -1,0 +1,98 @@
+#signup-form-div {
+  width: 30%;
+  margin: auto;
+  margin-top: 30px;
+  background-color: #272727;
+  text-align: center;
+  font-family: sans-serif;
+  height: 75vh;
+  padding: 10px;
+  border-radius: 25px;
+  color: whitesmoke;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+h1 {
+  margin-bottom: 30px;
+  margin-top: 15px;
+}
+form {
+  display: grid;
+  width: 80%;
+  margin: auto;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: auto;
+  row-gap: 20px;
+}
+input {
+  background-color: black;
+  outline: none;
+  padding: 5px;
+  border: 1px solid white;
+  color: white;
+}
+#signup {
+  width: 40%;
+  height: 40px;
+  cursor:not-allowed;
+  margin: auto;
+  margin-top: 10px;
+  border-radius: 15px;
+  border: 1px solid white;
+  color: white;
+  font-weight: bolder;
+  background-color: black;
+}
+a {
+  color: white;
+}
+#maildiv{
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+#button{
+  background-color: #000;
+  border-radius: 5px;
+  cursor:not-allowed;
+  color: white;
+  padding: 0 5px;
+  outline: none;
+  border: 1px solid white;
+}
+#signup:hover {
+  background-color: #272727;
+  border: 2px solid black;
+}
+#button:hover {
+  background-color: #272727;
+  border: 1px solid black;
+}
+#sendotp{
+  width: 40%;
+  height: 40px;
+  cursor: pointer;
+  margin: auto;
+  margin-top: 10px;
+  border-radius: 15px;
+  border: 1px solid white;
+  color: white;
+  font-weight: bolder;
+  background-color: black;
+}
+@media all and (min-width: 230px) and (max-width: 500px) {
+  #signup-form-div {
+    width: 85%;
+    height:550px;
+  }
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="styles/index.css" />
+    <style>
+      #movie {
+        width: 95%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content:start;
+        align-items: center;
+        margin: auto;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+      .noresult{
+        color: white;
+        text-align: center;
+      }
+      #movie > div {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        padding: 10px;
+        border-radius: 15px;
+        width: 300px;
+        height: 450px;
+        color: white;
+        background-color: #272727;
+      }
+      #movie > div > img {
+        width: 100%;
+        height: 70%;
+        border-radius: 15px;
+        margin-bottom: 20px;
+      }
+      #movie > div > div > button {
+        background-color: #000;
+        color: white;
+        padding: 5px;
+        border-radius: 20px;
+        cursor: pointer;
+      }
+      #queryName{
+        color: white;
+        margin-bottom: 30px;
+        margin-left: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="navbar">
+        <a href="index.html"
+          ><div><h1>DearTV</h1></div></a
+        >
+        <div>
+          <input
+            onkeyup="getSearchResults()"
+            id="query"
+            type="search"
+            placeholder="What are you looking for ?"
+          />
+          <img
+            id="search"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxICY7v8a7DbKB_BebFIRbnOoPCX4O92hBcMKjVIDm8fLSc-Id0ndJWYMo57-VdTTIYA0&usqp=CAU"
+            alt="search"
+          />
+        </div>
+        <div>
+          <select id="username" onchange="logoutUser()">
+            <option id="names" value="name">username</option>
+            <option value="logout">logout</option>
+          </select>
+          <div id="sort-buttons">
+            <select id="sortmovie">
+              <option value="">All Movies</option>
+              <option value="Ascending">A to Z</option>
+              <option value="Descending">Z to A</option>
+              <option value="Latest">Latest</option>
+              <option value="Oldest">Oldest</option>
+              <option value="High Ratings">High Ratings</option>
+              <option value="Low Ratings">Low Ratings</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div id="clouser">
+        <div id="querydetails">
+        </div>
+      </div>
+    <div id="queryName">
+        <h1 id="headingName"></h1>
+    </div>
+    <h3 class="noresult"></h3>
+    <div id="movie"></div>
+    <div id="footer">
+      <div>
+        <a href="https://github.com/mishravivek09" target="_blank"
+          ><img src="github.png" alt="logo"
+        /></a>
+        <a
+          href="https://www.linkedin.com/in/vivek-mishra-b9339717a/"
+          target="_blank"
+          ><img src="linkedin.png" alt="logo"
+        /></a>
+      </div>
+      <div>
+        <div>
+          <a href="#">Privacy</a>
+          <p>|</p>
+          <a href="#">Terms</a>
+          <p>|</p>
+          <a href="#">FAQs</a>
+          <p>|</p>
+          <a href="#">Help</a>
+        </div>
+      </div>
+      <div>
+        <div>
+          <a href="#">@mishravivek09.</a>
+          <p>All Rights Reserved.</p>
+          <a href="#">Designed By Vivek Mishra</a>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="scripts/search.js"></script>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DearTV - Signup</title>
+    <link rel="stylesheet" href="styles/signup.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
+
+  <body>
+    <div id="navbar">
+      <a href="index.html"
+        ><div><h1>DearTV</h1></div></a
+      >
+    </div>
+    <div id="signup-form-div">
+      <h1>Signup</h1>
+      <form id="form">
+        <input id="name" required type="text" placeholder="enter your name" />
+        <input
+          id="email"
+          required
+          type="email"
+          placeholder="enter your email"
+        />
+        <input
+          id="passwd"
+          required
+          type="password"
+          placeholder="enter password"
+        />
+        <button id="sendotp">Send otp</button>
+        <div id="maildiv">
+          <input id="emailotp" type="number" placeholder="Enter otp">
+          <button disabled id="button">Verify otp</button>
+        </div>
+        <button disabled id="signup">Signup</button>
+        <a href="login.html">Already have an Account ?</a>
+      </form>
+    </div>
+    <div id="footer">
+      <div>
+        <a href="https://github.com/mishravivek09" target="_blank"
+          ><img src="github.png" alt="logo"
+        /></a>
+        <a
+          href="https://www.linkedin.com/in/vivek-mishra-b9339717a/"
+          target="_blank"
+          ><img src="linkedin.png" alt="logo"
+        /></a>
+      </div>
+      <div>
+        <div>
+          <a href="#">Privacy</a>
+          <p>|</p>
+          <a href="#">Terms</a>
+          <p>|</p>
+          <a href="#">FAQs</a>
+          <p>|</p>
+          <a href="#">Help</a>
+        </div>
+      </div>
+      <div>
+        <div>
+          <a href="#">@mishravivek09.</a>
+          <p>All Rights Reserved.</p>
+          <a href="#">Designed By Vivek Mishra</a>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="scripts/signup.js"></script>
+</html>
